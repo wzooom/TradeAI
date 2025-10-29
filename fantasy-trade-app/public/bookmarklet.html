@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPN Cookie Helper - Fantasy Trade Analyzer</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6;
+            color: #374151;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .bookmarklet { 
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white; 
+            padding: 12px 24px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            display: inline-block; 
+            margin: 15px 0;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+            transition: transform 0.2s;
+        }
+        .bookmarklet:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+        }
+        .step { 
+            background: #f8fafc; 
+            border-left: 4px solid #3b82f6; 
+            padding: 20px; 
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .code-block { 
+            background: #1f2937; 
+            color: #f9fafb;
+            padding: 15px; 
+            border-radius: 6px; 
+            font-family: 'Monaco', 'Menlo', monospace; 
+            margin: 10px 0;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+        .warning {
+            background: #fef3cd;
+            border: 1px solid #fbbf24;
+            color: #92400e;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .success {
+            background: #d1fae5;
+            border: 1px solid #10b981;
+            color: #065f46;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏈 ESPN Cookie Helper</h1>
+        <p>One-click ESPN cookie extraction for Fantasy Trade Analyzer</p>
+    </div>
+    
+    <div class="success">
+        <strong>✨ This works just like FantasyPros!</strong> Save the bookmarklet below and use it on ESPN to instantly get your cookies.
+    </div>
+    
+    <div class="step">
+        <h3>📌 Step 1: Save the Bookmarklet</h3>
+        <p><strong>Drag this button to your bookmarks bar:</strong></p>
+        <a href="javascript:(function(){const cookies=document.cookie;console.log('=== BOOKMARKLET DEBUG ===');console.log('All cookies:',cookies);let espnS2=cookies.match(/espn_s2=([^;]+)/)?.[1];let swid=cookies.match(/SWID=([^;]+)/)?.[1];console.log('espn_s2 match:',espnS2);console.log('SWID match:',swid);console.log('espnS2 exists:',!!espnS2);console.log('swid exists:',!!swid);console.log('Both exist:',!!(espnS2&&swid));if(espnS2&&swid){const result=espnS2+'|'+swid;console.log('Result to copy:',result);try{navigator.clipboard.writeText(result).then(()=>{alert('✅ SUCCESS! ESPN cookies copied to clipboard!\n\nespn_s2: Found ('+espnS2.substring(0,20)+'...)\nSWID: Found ('+swid+')\n\nGo back to Fantasy Trade Analyzer and paste them.')}).catch(err=>{console.error('Clipboard error:',err);prompt('Copy these ESPN cookies manually:',result)})}catch(e){console.error('Copy failed:',e);prompt('Copy these ESPN cookies manually:',result)}}else{alert('❌ MISSING COOKIES:\nespn_s2: '+(espnS2?'Found ('+espnS2.substring(0,20)+'...)':'MISSING')+'\nSWID: '+(swid?'Found ('+swid+')':'MISSING')+'\nURL: '+window.location.href+'\n\nCheck browser console (F12) for details.')}})()" class="bookmarklet">
+            📋 Get ESPN Cookies
+        </a>
+        <p><em>If you can't drag it, follow the manual instructions below.</em></p>
+    </div>
+    
+    <div class="step">
+        <h3>🚀 Step 2: Use the Bookmarklet</h3>
+        <ol>
+            <li><strong>Go to ESPN Fantasy:</strong> <a href="https://fantasy.espn.com" target="_blank">fantasy.espn.com</a></li>
+            <li><strong>Log in</strong> to your ESPN account</li>
+            <li><strong>Click the bookmarklet</strong> you saved in your bookmarks bar</li>
+            <li><strong>Cookies automatically copied!</strong> You'll see a success message</li>
+            <li><strong>Go back to Fantasy Trade Analyzer</strong> and paste in the "Easy Cookie Login" section</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <h3>⚙️ Manual Installation (Alternative Method)</h3>
+        <p>If dragging doesn't work, create a new bookmark manually:</p>
+        <ol>
+            <li>Right-click your bookmarks bar → "Add page" or "New bookmark"</li>
+            <li>Name it: <code>ESPN Cookies</code></li>
+            <li>Copy and paste this as the URL:</li>
+        </ol>
+        <div class="code-block">
+javascript:(function(){const cookies=document.cookie;console.log('=== BOOKMARKLET DEBUG ===');console.log('All cookies:',cookies);let espnS2=cookies.match(/espn_s2=([^;]+)/)?.[1];let swid=cookies.match(/SWID=([^;]+)/)?.[1];console.log('espn_s2 match:',espnS2);console.log('SWID match:',swid);console.log('espnS2 exists:',!!espnS2);console.log('swid exists:',!!swid);console.log('Both exist:',!!(espnS2&&swid));if(espnS2&&swid){const result=espnS2+'|'+swid;console.log('Result to copy:',result);try{navigator.clipboard.writeText(result).then(()=>{alert('✅ SUCCESS! ESPN cookies copied to clipboard!\n\nespn_s2: Found ('+espnS2.substring(0,20)+'...)\nSWID: Found ('+swid+')\n\nGo back to Fantasy Trade Analyzer and paste them.')}).catch(err=>{console.error('Clipboard error:',err);prompt('Copy these ESPN cookies manually:',result)})}catch(e){console.error('Copy failed:',e);prompt('Copy these ESPN cookies manually:',result)}}else{alert('❌ MISSING COOKIES:\nespn_s2: '+(espnS2?'Found ('+espnS2.substring(0,20)+'...)':'MISSING')+'\nSWID: '+(swid?'Found ('+swid+')':'MISSING')+'\nURL: '+window.location.href+'\n\nCheck browser console (F12) for details.')}})();
+        </div>
+    </div>
+    
+    <div class="warning">
+        <strong>🔒 Privacy Note:</strong> This bookmarklet only reads cookies from ESPN.com and copies them to your clipboard. No data is sent to any external servers. The cookies are used only to authenticate with ESPN's API.
+    </div>
+    
+    <div class="step">
+        <h3>🔧 Troubleshooting</h3>
+        <p><strong>If you get "No ESPN cookies found":</strong></p>
+        <ol>
+            <li><strong>Check the URL:</strong> Make sure you're on <code>fantasy.espn.com</code> (not just <code>espn.com</code>)</li>
+            <li><strong>Log in properly:</strong> Go to your actual league page, not just the ESPN homepage</li>
+            <li><strong>Try different ESPN pages:</strong>
+                <ul>
+                    <li><a href="https://fantasy.espn.com/football/league" target="_blank">fantasy.espn.com/football/league</a></li>
+                    <li>Your specific league URL</li>
+                    <li>The ESPN Fantasy homepage after logging in</li>
+                </ul>
+            </li>
+            <li><strong>Check browser console:</strong> Press F12 → Console tab to see debug info</li>
+            <li><strong>Clear cookies and re-login:</strong> Sometimes old cookies interfere</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <h3>🎯 How It Works</h3>
+        <p>The bookmarklet:</p>
+        <ul>
+            <li>✅ Finds your ESPN_S2 and SWID cookies automatically</li>
+            <li>✅ Formats them properly for Fantasy Trade Analyzer</li>
+            <li>✅ Copies them to your clipboard instantly</li>
+            <li>✅ Works on any ESPN Fantasy page</li>
+            <li>✅ No extension installation required</li>
+        </ul>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
+        <p><a href="http://localhost:3000" style="color: #3b82f6;">← Back to Fantasy Trade Analyzer</a></p>
+    </div>
+</body>
+</html>
