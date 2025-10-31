@@ -1,0 +1,88 @@
+absl-py @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e3w1nvit39/croot/absl-py_1714140475537/work
+anyio==4.11.0
+appdirs==1.4.4
+astunparse==1.6.3
+brotlicffi @ file:///opt/miniconda3/conda-bld/brotlicffi_1761745171027/work
+cachetools==6.2.1
+certifi @ file:///opt/miniconda3/conda-bld/certifi_1759786064563/work/certifi
+cffi @ file:///opt/miniconda3/conda-bld/cffi_1761832774705/work
+charset-normalizer @ file:///opt/miniconda3/conda-bld/charset-normalizer_1761744820108/work
+click==8.3.0
+contourpy==1.3.3
+cramjam==2.11.0
+cycler==0.12.1
+espn-api==0.45.1
+fastapi==0.99.1
+fastparquet==2024.11.0
+flatbuffers @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_aeq2r2ghkr/croot/python-flatbuffers_1722369102465/work
+fonttools==4.60.1
+fsspec==2025.10.0
+gast @ file:///croot/gast_1752670701094/work
+google-auth==2.41.1
+google-auth-oauthlib==1.2.3
+google-pasta @ file:///Users/ktietz/demo/mc3/conda-bld/google-pasta_1630577991354/work
+grpcio @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_cfvg1gbxnd/croot/grpc-split_1742490251423/work
+h11==0.16.0
+h5py @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_9af59qs5yc/croot/h5py_1750863003494/work
+httptools==0.7.1
+idna @ file:///opt/miniconda3/conda-bld/idna_1761912005314/work
+joblib==1.5.2
+keras==2.15.0
+kiwisolver==1.4.9
+libclang==18.1.1
+Markdown @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_c8yxkefe2v/croot/markdown_1746114450220/work
+markdown-it-py @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_43l_4ajkho/croot/markdown-it-py_1684279912406/work
+MarkupSafe @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1f_uj4vxik/croot/markupsafe_1738584045311/work
+matplotlib==3.10.7
+mdurl @ file:///opt/miniconda3/conda-bld/mdurl_1758552166200/work
+ml-dtypes==0.2.0
+mpi4py @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_1d9xrt98j0/croot/mpi4py_1749458500372/work
+namex @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_6e5bc3tm0x/croot/namex_1755731416062/work
+nfl_data_py==0.3.3
+numpy==1.26.4
+oauthlib==3.3.1
+opt-einsum @ file:///tmp/build/80754af9/opt_einsum_1621500238896/work
+optree @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_602l3ol2u3/croot/optree_1742210195941/work
+packaging @ file:///opt/miniconda3/conda-bld/packaging_1761049079066/work
+pandas==1.5.3
+pillow==12.0.0
+protobuf==4.25.8
+pyasn1==0.6.1
+pyasn1_modules==0.4.2
+pycparser @ file:///opt/miniconda3/conda-bld/pycparser_1757496044852/work
+pydantic==1.10.24
+Pygments @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f0f10r98sf/croot/pygments_1744664126614/work
+pyparsing==3.2.5
+PySocks @ file:///opt/miniconda3/conda-bld/pysocks_1761753010242/work
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.1
+python-multipart==0.0.20
+pytz==2025.2
+PyYAML==6.0.3
+requests @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_ef59rwwti1/croot/requests_1756709671417/work
+requests-oauthlib==2.0.0
+rich @ file:///opt/miniconda3/conda-bld/rich_1760375481681/work
+rsa==4.9.1
+scikit-learn==1.7.2
+scipy==1.16.3
+seaborn==0.13.2
+six @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_03myqm7p6o/croot/six_1744271511946/work
+sniffio==1.3.1
+starlette==0.27.0
+tensorboard==2.15.2
+tensorboard_data_server @ file:///var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_32p363irxt/croot/tensorboard-data-server_1724172561901/work/tensorboard_data_server-0.7.0-py3-none-macosx_11_0_arm64.whl#sha256=6631fdebab6ad0bac03ac2d86882087bfe5b5f233e8aa8669b8b6cf67d1f388d
+tensorflow-estimator==2.15.0
+tensorflow-io-gcs-filesystem==0.37.1
+tensorflow-macos==2.15.0
+tensorflow-metal==1.1.0
+termcolor @ file:///Users/cbousseau/work/recipes/ci_py311/termcolor_1678004277555/work
+threadpoolctl==3.6.0
+typing_extensions @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_dffmcwqo6o/croot/typing_extensions_1756281471323/work
+tzdata==2025.2
+urllib3==2.2.3
+uvicorn==0.24.0.post1
+uvloop==0.22.1
+watchfiles==1.1.1
+websockets==15.0.1
+Werkzeug @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_87am5fxnsf/croot/werkzeug_1737448721856/work
+wrapt==1.14.2
